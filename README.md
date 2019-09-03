@@ -1,7 +1,7 @@
 # FileMonthOrganizer
 A Powershell script that takes files and photos from a directory, and organizes them in folders for each month.
 
-Useful for organizing imported photos in folders for every month. It includes files in subdirectories so it works properly with structures such as `DCIM/113APPLE/`
+Useful for organizing imported photos in folders for every month. It includes files in subdirectories so it works properly with structures such as `DCIM/113APPLE/`.
 
 ## Parameters
 
