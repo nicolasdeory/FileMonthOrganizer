@@ -15,4 +15,4 @@ Folders with year and month (with format YYYY-MM) will be created provided that 
 - Files are copied to the new location, not moved, so there shouldn't be any risk of file loss.  
 Regardless, make sure you have your files or photos backed up in another location before running the script on a folder.
 
-- Copying files to a directory with identical filenames, won't overwrite them. Instead, the copied file names will change to `FILENAME(1/2/...).EXTENSION`
+- Copying files to a directory with identical filenames, won't overwrite them. Instead, the copied file names will change to `FILENAME(i).EXTENSION` where `i` will have a value according to the first available filename.
