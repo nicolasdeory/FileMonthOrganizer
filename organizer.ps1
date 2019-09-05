@@ -10,7 +10,10 @@ $items = Get-ChildItem -Path $inputpath -Recurse
 $items | ForEach-Object {
     if ( -not $_.PSIsContainer)
     {
-        $monthString = $_.LastWriteTime.Month
+        $monthString = $_.LastWriteTime.Month.ToString()
+        if ($monthString.length -lt 2) {
+            $monthString = "0" + $monthString
+        }
         $yearString = $_.LastWriteTime.Year
         $outputFolder = $outputpath + "\$($yearString)-$($monthString)"
         if ( -not (Test-Path $outputFolder)) 
